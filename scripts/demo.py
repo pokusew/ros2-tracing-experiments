@@ -247,7 +247,19 @@ def add_markers_to_figure(
 
 
 if __name__ == '__main__':
-    path = '~/Sites/ros/tracing/data/ref-ros-world-2021-demo'
+    # path = '~/Sites/ros/tracing/data/my-galactic-ros-world-2021-demo'
+    # path = '~/Sites/ros/tracing/data/my-rolling-apt-ros-world-2021-demo-v1'
+    # path = '~/Sites/ros/tracing/data/my-rolling-src-ros-world-2021-demo-v1'
+    # path = '~/Sites/ros/tracing/data/my-rolling-src-ros-world-2021-demo-v2'
+    # path = '~/Sites/ros/tracing/data/my-rolling-src-ros-world-2021-demo-v3-ros-nyc'
+    # path = '~/Sites/ros/tracing/data/my-rolling-src-ros-world-2021-demo-v4-ros-nyc'
+    path = '~/Sites/ros/tracing/data/my-rolling-src-ros-world-2021-demo-v5-ros-nyc'
+    # path = '~/Sites/ros/tracing/data/my-rolling-src-ros-world-2021-demo-v6'
+    # path = '~/Sites/ros/tracing/data/my-rolling-src-ros-world-2021-demo-v7'
+    # path = '~/Sites/ros/tracing/data/my-rolling-src-ros-world-2021-demo-v8'
+    # path = '~/Sites/ros/tracing/data/my-rolling-src-ros-world-2021-demo-v9'
+    # path = '~/Sites/ros/tracing/data/my-rolling-src-ros-world-2021-demo-v10'
+    # path = '~/Sites/ros/tracing/data/ref-ros-world-2021-demo'
     events: List[dict] = load_file(path)
     handler: Ros2Handler = Ros2Handler.process(events)
 
